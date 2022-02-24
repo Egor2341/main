@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>По каютам!</title>
+</head>
+<body>
+<h1>Миссия Колонизация Марса</h1>
+<h2 align="center">Размещение по каютам</h2>
+
+<ul>
+    {% for user in user_list %}
+    <div>{{ user }} - Каюта № {{ loop.index }} {% if loop.first %} - капитан корабля {% else %} {% endif %}
+    </div>
+    {% endfor %}
+</ul>
+</body>
+</html>
